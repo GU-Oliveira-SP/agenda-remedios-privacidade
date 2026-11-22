@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de Privacidade do aplicativo Agenda de Remédios (com.medagenda.app).">
+  <meta name="theme-color" content="#0d9488">
+  <title>Política de Privacidade — Agenda de Remédios</title>
+  <style>
+    :root {
+      --teal: #0d9488;
+      --teal-dark: #115e59;
+      --teal-soft: #f0fdfa;
+      --teal-border: #99f6e4;
+      --slate-bg: #f1f5f9;
+      --card-bg: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border: #cbd5e1;
+      --warn-bg: #fffbeb;
+      --warn-border: #fcd34d;
+      --warn-text: #92400e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--slate-bg);
+      color: var(--text-main);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-header {
+      background: linear-gradient(135deg, var(--teal) 0%, #0284c7 100%);
+      color: #ffffff;
+      padding: 2.5rem 1.25rem 2.25rem;
+      text-align: center;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.12);
+    }
+
+    .header-inner {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .app-badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 999px;
+      padding: 0.25rem 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.85rem;
+      letter-spacing: 0.01em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.55rem, 4vw, 2.2rem);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .update-date {
+      margin: 0.75rem 0 0;
+      font-size: 0.95rem;
+      opacity: 0.95;
+    }
+
+    main {
+      max-width: 820px;
+      margin: -1.25rem auto 2.5rem;
+      padding: 0 1rem;
+    }
+
+    .summary-card {
+      background-color: var(--teal-soft);
+      border: 1.5px solid var(--teal-border);
+      border-left: 6px solid var(--teal);
+      border-radius: 14px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+    }
+
+    .summary-card h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.1rem;
+      color: var(--teal-dark);
+      border: none;
+      padding: 0;
+    }
+
+    .summary-card p {
+      margin: 0;
+      color: var(--text-main);
+    }
+
+    .content-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem 1.75rem;
+      box-shadow: 0 6px 22px rgba(15, 23, 42, 0.05);
+    }
+
+    section + section {
+      margin-top: 1.85rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e2e8f0;
+    }
+
+    h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--teal-dark);
+    }
+
+    p {
+      margin: 0 0 0.85rem;
+      color: var(--text-main);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0.5rem 0 0.85rem;
+      padding-left: 1.35rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    code {
+      background-color: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 0.1rem 0.35rem;
+      font-size: 0.9em;
+      color: var(--teal-dark);
+    }
+
+    a {
+      color: #0284c7;
+      font-weight: 600;
+      text-decoration: underline;
+      word-break: break-word;
+    }
+
+    a:hover {
+      color: var(--teal-dark);
+    }
+
+    .health-notice {
+      background-color: var(--warn-bg);
+      border: 1px solid var(--warn-border);
+      border-left: 5px solid #d97706;
+      border-radius: 10px;
+      padding: 1rem 1.15rem;
+      color: var(--warn-text);
+      font-weight: 500;
+    }
+
+    .contact-box {
+      background-color: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 0.9rem 1.1rem;
+      font-weight: 600;
+    }
+
+    footer {
+      max-width: 820px;
+      margin: 0 auto 2.5rem;
+      padding: 0 1rem;
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 600px) {
+      .page-header {
+        padding: 2rem 1rem 1.9rem;
+      }
+
+      .content-card {
+        padding: 1.25rem 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <div class="header-inner">
+      <div class="app-badge">Agenda de Remédios • com.medagenda.app</div>
+      <h1>Política de Privacidade — Agenda de Remédios</h1>
+      <p class="update-date"><strong>Última atualização:</strong> 22 de novembro de 2026</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="summary-card" role="region" aria-label="Resumo direto sobre privacidade">
+      <h2>Resumo Direto</h2>
+      <p>
+        Seus dados de saúde, perfis familiares, medicamentos, horários de doses e fotos de embalagens ficam
+        armazenados <strong>100% offline no seu próprio aparelho</strong>. O aplicativo não cria contas e não envia
+        informações médicas para servidores externos. Para se manter gratuito, o aplicativo exibe banners
+        discretos fornecidos pelo <strong>Google AdMob</strong>.
+      </p>
+    </div>
+
+    <article class="content-card">
+      <section id="coleta-e-armazenamento">
+        <h2>1. Coleta e Armazenamento de Dados</h2>
+        <p>
+          O aplicativo <strong>Agenda de Remédios</strong> (<code>com.medagenda.app</code>) foi projetado para
+          funcionar integralmente sem conexão à internet para o gerenciamento de medicamentos. Todas as informações
+          inseridas por você — incluindo nomes de perfis, medicamentos cadastrados, dosagens, horários, histórico de
+          doses tomadas, configurações do modo "Não Perturbe" e fotos das embalagens — são gravadas
+          <strong>exclusivamente no armazenamento local do dispositivo</strong> (banco local IndexedDB no WebView do app).
+        </p>
+        <p>
+          Não exigimos cadastro, login, senha ou e-mail para uso do aplicativo, e não mantemos servidores próprios
+          para coletar, hospedar ou sincronizar seus dados de saúde.
+        </p>
+      </section>
+
+      <section id="permissoes-dispositivo">
+        <h2>2. Permissões do Dispositivo</h2>
+        <p>
+          Para oferecer suas funcionalidades essenciais, o aplicativo pode utilizar as seguintes permissões no Android:
+        </p>
+        <ul>
+          <li>
+            <strong>Notificações e Alarmes Exatos (<code>POST_NOTIFICATIONS</code> e <code>SCHEDULE_EXACT_ALARM</code>):</strong>
+            utilizadas exclusivamente para agendar e disparar lembretes locais de medicamentos nos horários configurados,
+            inclusive quando o dispositivo estiver bloqueado ou sem internet.
+          </li>
+          <li>
+            <strong>Câmera e Galeria de Imagens:</strong> utilizadas apenas quando você escolhe fotografar ou anexar
+            uma imagem da caixa ou comprimido para facilitar a identificação visual no calendário. As fotos são recortadas
+            e armazenadas somente no banco local do aparelho.
+          </li>
+          <li>
+            <strong>Acesso a Arquivos (<code>.meds</code> e <code>.json</code>):</strong> utilizado exclusivamente quando
+            você importa ou exporta manualmente um modelo de prescrição médica.
+          </li>
+          <li>
+            <strong>Internet e ID de Publicidade (<code>INTERNET</code> e <code>AD_ID</code>):</strong> utilizados pelo
+            SDK do Google AdMob para carregamento dos banners publicitários quando houver conexão ativa.
+          </li>
+        </ul>
+      </section>
+
+      <section id="compartilhamento">
+        <h2>3. Compartilhamento de Dados e Arquivos de Prescrição</h2>
+        <p>
+          Não vendemos, alugamos ou compartilhamos automaticamente suas informações de saúde com terceiros.
+        </p>
+        <p>
+          Caso utilize o recurso de geração ou importação de receitas (<code>.meds</code>), o arquivo contendo nomes de
+          medicamentos e intervalos é gerado localmente no dispositivo e <strong>só é compartilhado quando você decide
+          enviá-lo manualmente</strong> por meio de outro aplicativo de sua escolha (como mensageiros ou e-mail).
+        </p>
+      </section>
+
+      <section id="anuncios-admob">
+        <h2>4. Anúncios (Google AdMob)</h2>
+        <p>
+          Para oferecer o aplicativo gratuitamente, exibimos um banner publicitário discreto utilizando o serviço
+          <strong>Google AdMob</strong> (fornecido pela Google LLC).
+        </p>
+        <p>
+          Quando o aparelho está conectado à internet, o SDK do Google AdMob pode coletar automaticamente informações
+          técnicas do dispositivo, como o <strong>ID de Publicidade do Android (Advertising ID / AAID)</strong>,
+          endereço IP aproximado, informações básicas do dispositivo e dados de diagnóstico/desempenho de anúncios, com
+          a finalidade de exibir banners, medir impressões e prevenir fraudes.
+        </p>
+        <p>
+          <strong>O Google AdMob jamais tem acesso</strong> aos nomes dos seus medicamentos, horários, fotos de caixas,
+          perfis cadastrados ou qualquer dado de saúde armazenado no aplicativo.
+        </p>
+        <p>
+          Para saber como o Google trata essas informações, consulte a Política de Privacidade oficial do Google em:
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+            https://policies.google.com/privacy
+          </a>.
+        </p>
+        <p>
+          Você pode gerenciar, redefinir ou limitar a personalização de anúncios a qualquer momento no seu aparelho
+          Android acessando <strong>Configurações &gt; Google &gt; Anúncios</strong>.
+        </p>
+      </section>
+
+      <section id="seguranca-exclusao">
+        <h2>5. Segurança e Exclusão dos Dados</h2>
+        <p>
+          Por padrão, o backup automático em nuvem do sistema está desativado no manifesto do aplicativo
+          (<code>allowBackup="false"</code>) para evitar o envio involuntário de registros de saúde locais para fora do
+          seu dispositivo.
+        </p>
+        <p>
+          Você possui controle total sobre seus dados e pode excluí-los permanentemente a qualquer momento:
+        </p>
+        <ul>
+          <li>Removendo medicamentos ou perfis diretamente dentro do aplicativo;</li>
+          <li>Limpando os dados/armazenamento do aplicativo nas configurações do Android; ou</li>
+          <li>Desinstalando o aplicativo do aparelho, o que apaga todo o banco local armazenado.</li>
+        </ul>
+      </section>
+
+      <section id="privacidade-criancas">
+        <h2>6. Privacidade de Crianças</h2>
+        <p>
+          O <strong>Agenda de Remédios</strong> permite cadastrar múltiplos perfis para que pais, responsáveis ou
+          cuidadores organizem os horários de medicamentos de crianças, idosos ou dependentes. Todos os dados desses
+          perfis permanecem sob responsabilidade do titular do aparelho e armazenados exclusivamente de forma local,
+          sem coleta de dados pessoais em servidores externos.
+        </p>
+      </section>
+
+      <section id="aviso-saude">
+        <h2>7. Aviso Importante sobre Saúde</h2>
+        <div class="health-notice">
+          O <strong>Agenda de Remédios</strong> é uma ferramenta auxiliar de organização pessoal e lembretes visuais.
+          Ele <strong>não substitui</strong> orientação, consulta, diagnóstico ou prescrição médica ou farmacêutica.
+          Em caso de dúvidas sobre posologia, horários ou efeitos de qualquer medicamento, consulte sempre um
+          profissional de saúde qualificado.
+        </div>
+      </section>
+
+      <section id="alteracoes">
+        <h2>8. Alterações nesta Política</h2>
+        <p>
+          Esta Política de Privacidade pode ser atualizada periodicamente para refletir melhorias no aplicativo ou
+          adequações legais e regulatórias. Sempre que houver alterações, a data de "Última atualização" no topo desta
+          página será revisada.
+        </p>
+      </section>
+
+      <section id="contato">
+        <h2>9. Contato</h2>
+        <p>
+          Em caso de dúvidas, sugestões ou solicitações relacionadas à privacidade no uso do aplicativo
+          <strong>Agenda de Remédios</strong>, entre em contato pelo e-mail:
+        </p>
+        <div class="contact-box">E-mail de contato: [SEU-EMAIL-DE-CONTATO]</div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    Agenda de Remédios (<code>com.medagenda.app</code>) — Política de Privacidade
+  </footer>
+</body>
+</html>
